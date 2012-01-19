@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SOSLokator</string>
+    <string name="latitude_text">Zemljepisna širina</string>
+    <string name="longitude_text">Zemljepisna dolžina</string>
+    <string name="buttonGetLocation">Osveži lokacijo</string>
+    <string name="buttonShowOnMap">Prikaži na zemljevidu</string>
+    <string name="buttonSendSMS">Pošlji sporočilo</string>
+    <string name="prefrences">Nastavitve</string>
+    <string name="numberList">Seznam prejemnikov</string>
+    <string name="exit">Izhod</string>
+    <string name="path_data">Podatki</string>
+    <string name="add">Dodaj</string>
+    <string name="remove">Odstrani</string>
+    <string name="getting_location_data">Pridobivam podatke o lokaciji.</string>
+    <string name="your_location">VAŠA LOKACIJA</string>
+    <string name="location_header">Vaša trenutna lokacija:</string>
+    <string name="location_sos_header">Ciljna lokacija:</string>
+    <string name="location_adress_header">Naslov:</string>
+    <string name="widget_butt_back_text">NAZAJ</string>
+    <string name="widget_butt_forward_text">NAPREJ</string>
+    <string name="widget_butt_open_text">ODPRI</string>
+    <string name="nodata">NI PODATKA</string>
+    <string name="widget_text_nodata">OSVEŽI ME</string>
+    <string name="widget_empty_text"></string>
+    <string name="button_multi_text">Multi menu</string>
+    <string name="refresh">Osveži lokacijo</string>
+    <string name="send_sms">Pošlji SMS</string>
+    <string name="contacts">Kontakti</string>
+    <string name="sos_paths">Prejeta sporočila</string>
+
+</resources>

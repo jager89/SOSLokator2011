@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_main_refresh" android:icon="@drawable/ic_menu_mylocation" android:title="@string/refresh">
+    </item><item
+        android:id="@+id/menu_main_data"
+        android:icon="@drawable/ic_menu_search"
+        android:title="@string/path_data">
+    </item>
+    
+    
+    <item
+        android:id="@+id/menu_main_sendsms"
+        android:icon="@drawable/ic_menu_send"
+        android:title="@string/send_sms">
+    </item>
+    <item
+        android:id="@+id/menu_main_contacts"
+        android:icon="@drawable/ic_menu_allfriends"
+        android:title="@string/contacts">
+    </item>
+    <item
+        android:id="@+id/menu_main_sospaths"
+        android:icon="@drawable/ic_menu_friendslist"
+        android:title="@string/sos_paths">
+    </item><item android:id="@+id/menu_main_exit" android:icon="@drawable/ic_menu_close_clear_cancel" android:title="@string/exit">
+    </item>
+    <!--
+          <item android:icon="@drawable/ic_menu_preferences" android:id="@+id/prefrences"
+		android:title="@string/prefrences"></item>
+    -->
+
+</menu>

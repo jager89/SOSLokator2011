@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/layout_path_data_text_view_my_location_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onTextViewLocationStatusClick"
+        android:text="@string/location_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_my_location_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_my_location_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_my_location_adress_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onTextViewLocationStatusClick"
+        android:text="@string/location_adress_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_my_location_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+
+    </TextView>
+    
+    <TextView
+        android:id="@+id/layout_path_data_textview_sos_location_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:clickable="true"
+        android:onClick="onTextViewLocationStatusClick"
+        android:text="@string/location_sos_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_sos_location_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_sos_location_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_sos_location_adress_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onTextViewLocationStatusClick"
+        android:text="@string/location_adress_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/layout_path_data_textview_sos_location_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+
+    </TextView>
+
+</LinearLayout>

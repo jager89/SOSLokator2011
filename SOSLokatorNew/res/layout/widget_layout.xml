@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/myshape" android:orientation="horizontal"
+	android:layout_margin="2dip" android:minHeight="300dip"
+	android:layout_height="match_parent" android:layout_width="match_parent"
+	android:paddingLeft="5px" android:paddingRight="5px">
+	<TextView android:text="@string/widget_butt_back_text"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_height="match_parent" android:layout_width="wrap_content"
+		android:gravity="center" android:id="@+id/widget_butt_back"></TextView>
+	<LinearLayout android:layout_height="match_parent"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:gravity="center" android:id="@+id/linear_layout_data">
+		<TextView android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/widget_textview_timestamp" android:layout_width="match_parent"
+			android:gravity="center" android:text="@string/widget_empty_text"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent" android:gravity="center"
+			android:id="@+id/widget_textview_dislplay_name" android:text="@string/widget_text_nodata"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:gravity="center" android:id="@+id/widget_textview_phone_number"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent" android:text="@string/widget_empty_text"></TextView>
+	</LinearLayout>
+	<TextView android:layout_width="wrap_content"
+		android:text="@string/widget_butt_forward_text"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_gravity="clip_vertical" android:layout_height="match_parent"
+		android:gravity="center" android:id="@+id/widget_butt_forward"></TextView>
+</LinearLayout>
