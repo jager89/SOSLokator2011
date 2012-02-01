@@ -28,7 +28,9 @@ public class SMSSender {
 	}
 	
 	public void sendSMS() {
-		
+//		String str = "Sporočila so bila poslana!\n(poslanih 3 od 3 sporočil)";
+//		Toast.makeText(activity, str , Toast.LENGTH_LONG).show();
+
 		System.out.println("BUTTON SEND_SMS CLICK!!!");
 		List<MyContacts> vecID = myApp.getListContactsID();
 
@@ -54,9 +56,9 @@ public class SMSSender {
 			ProgressDialog dialog;
 			String str;
 			if(vec.size() == 1)
-				str = "Po�iljam Sporo�ilo! Po�akajte prosim...";
+				str = "Pošiljam Sporočilo! Počakajte prosim...";
 			else
-				str = "Po�iljam Sporo�ila! Po�akajte prosim...";
+				str = "Pošiljam Sporočila! Počakajte prosim...";
 			dialog = ProgressDialog.show(activity, "", str, true);
 			String text = LocationToString("SOS!!! Moja trenutna lokacija:");
 
@@ -74,7 +76,7 @@ public class SMSSender {
 					messageCount++;
 				} catch (Exception e) {
 					e.printStackTrace();
-						Toast.makeText(activity, "Napaka pri po�iljanju!\n" + (messageCount + 1) + ". sporo�ilo ni bilo poslano!\n(prejemnik: " + vec.get(i) + ")", Toast.LENGTH_LONG).show();
+						Toast.makeText(activity, "Napaka pri pošiljanju!\n" + (messageCount + 1) + ". sporo�ilo ni bilo poslano!\n(prejemnik: " + vec.get(i) + ")", Toast.LENGTH_LONG).show();
 				}
 				System.out.println("SMS " + i + " SENDED!!!");
 			}
@@ -83,9 +85,9 @@ public class SMSSender {
 			
 			
 			if(vec.size() == 1)
-				str = "Sporo�ilo je bilo poslano!";
+				str = "Sporočilo je bilo poslano!";
 			else
-				str = "Sporo�ila so bila poslana!\n(poslanih " + messageCount + " od " + vec.size() + " sporo�il)";
+				str = "Sporočila so bila poslana!\n(poslanih " + messageCount + " od " + vec.size() + " sporočil)";
 			Toast.makeText(activity, str , Toast.LENGTH_LONG).show();
 
 		} else
@@ -101,7 +103,7 @@ public class SMSSender {
 			double lat = location.getLatitude();
 			double lng = location.getLongitude();
 			String geodata = getLocationInfo(lat, lng);
-			return "<soslokator>" + text + "\n" + "Zemljepisna �irina: " + zSirina + "\n" + "Zemljepisna dol�ina:" + zDolzina + "\n" + "Naslov:\n" + geodata +
+			return "<soslokator>" + text + "\n" + "Zemljepisna širina: " + zSirina + "\n" + "Zemljepisna dolžina:" + zDolzina + "\n" + "Naslov:\n" + geodata +
 					"\n<data>" + location.getLatitude() + " " + location.getLongitude() + "</data>";
 		}
 		return new String("");

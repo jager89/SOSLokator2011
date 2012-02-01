@@ -29,5 +29,6 @@
     <string name="send_sms">Pošlji SMS</string>
     <string name="contacts">Kontakti</string>
     <string name="sos_paths">Prejeta sporočila</string>
-
+	<string name="empty_path_list">Seznam prejetih sporočil je prazen.</string>
+	<string name="empty_contact_list">"Seznam prejemnikov je prazen, dodajte prejemnika!"</string>
 </resources>

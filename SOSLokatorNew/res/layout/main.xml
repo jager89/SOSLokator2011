@@ -40,8 +40,7 @@
     <com.google.android.maps.MapView
         android:id="@+id/layout_main_mapview"
         android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:apiKey="0V0x5NJTz8Zu2nazUNUJoYZfw7gxWuFRJ-y9Dzg"
         android:clickable="true"
         android:enabled="true" />

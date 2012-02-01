@@ -18,7 +18,7 @@ public class MyPositionOverlay extends Overlay {
 	
 	public MyPositionOverlay() {
 		super();
-		text = "VAŠA LOKACIJA";
+		text = "VAÅ A LOKACIJA";
 	}
 	
 	public MyPositionOverlay(String text) {

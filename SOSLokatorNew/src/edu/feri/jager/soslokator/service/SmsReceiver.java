@@ -53,7 +53,7 @@ public class SmsReceiver extends BroadcastReceiver {
 							i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  
 							i.putExtra("smsData", location.getArray());
 							context.startActivity(i); 
-							this.abortBroadcast();
+//							this.abortBroadcast();
 
 						} catch (Exception e) {
 							e.printStackTrace();

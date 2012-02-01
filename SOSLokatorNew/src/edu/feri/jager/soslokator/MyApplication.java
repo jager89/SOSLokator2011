@@ -53,13 +53,23 @@ public class MyApplication extends Application {
 		if(locationManager == null) {
 			locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		}
+		
+		List<String> a = locationManager.getAllProviders();
+		locationManager.requestLocationUpdates(a.get(2), MIN_TIME, MIN_DISTANCE, new MyLocationListener(this));				
+
 //		if(locationManager != null) {
 			String provider = locationManager.getBestProvider(getCriteria(), true);
 //			Location location = locationManager.getLastKnownLocation(provider);
 //			if(location != null) {
 //				setCurrLocation(location);
 //			}
-			locationManager.requestLocationUpdates(provider, MIN_TIME, MIN_DISTANCE, new MyLocationListener(this));
+			
+			
+			
+			if(provider != null) {
+				locationManager.requestLocationUpdates(provider, MIN_TIME, MIN_DISTANCE, new MyLocationListener(this));				
+			}
+			
 //		}
 	}
 	
@@ -83,7 +93,7 @@ public class MyApplication extends Application {
 		value = (value - (int) value) * VALUE; 
 		int seconds = (int) value;
 
-		return degrees + "° " + minutes + "' " + seconds + "\"";
+		return degrees + "Â°" + minutes + "' " + seconds + "\"";
 	}
 
 	public void fillContactsFromDB() {

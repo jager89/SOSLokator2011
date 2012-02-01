@@ -127,7 +127,7 @@ public class MainActivity extends MapActivity {
 			break;
 		case R.id.menu_main_data:
 			if(myApp.getCurrLocation() == null) {
-				Toast.makeText(MainActivity.this, "Vaša trenutna lokacija še ni doloèena. Ni podatkov o lokaciji.", Toast.LENGTH_SHORT).show();
+				Toast.makeText(MainActivity.this, "VaÅ¡a trenutna lokacija Å¡e ni doloÄena. Ni podatkov o lokaciji.", Toast.LENGTH_SHORT).show();
 			} else {
 				startActivity(new Intent(MainActivity.this, PathDataActivity.class));						
 
@@ -135,7 +135,7 @@ public class MainActivity extends MapActivity {
 			break;
 		case R.id.menu_main_sendsms:
 			if(myApp.getCurrLocation() == null) {
-				Toast.makeText(MainActivity.this, "Vaša trenutna lokacija še ni doloèena. Sporoèilo ni bilo poslano.", Toast.LENGTH_SHORT).show();
+				Toast.makeText(MainActivity.this, "VaÅ¡a trenutna lokacija Å¡e ni doloÄena. Ni podatkov o lokaciji.", Toast.LENGTH_SHORT).show();
 			} else {
 				SMSSender sender = new SMSSender(MainActivity.this);
 				sender.sendSMS();						
@@ -173,8 +173,8 @@ public class MainActivity extends MapActivity {
 		Location location = myApp.getCurrLocation();
 
 		if(location == null) {
-			latitudeText.append(getString(R.string.widget_text_nodata));
-			longitudeText.append(getString(R.string.widget_text_nodata));
+			latitudeText.append(getString(R.string.nodata));
+			longitudeText.append(getString(R.string.nodata));
 			if(textViewStatus != null)
 			textViewStatus.setText(getString(R.string.getting_location_data));
 			if(textViewLatitude != null)
@@ -193,7 +193,7 @@ public class MainActivity extends MapActivity {
 			textViewLongitude.setVisibility(TextView.VISIBLE);
 			if(mapView != null) {
 				mapView.getOverlays().clear();
-				mapView.getOverlays().add(new MyPositionOverlay(location, "VAŠA LOKACIJA"));
+				mapView.getOverlays().add(new MyPositionOverlay(location, "VAÅ A LOKACIJA"));
 				
 				Double geoLat = location.getLatitude() * 1E6;
 				Double geoLng = location.getLongitude() * 1E6;

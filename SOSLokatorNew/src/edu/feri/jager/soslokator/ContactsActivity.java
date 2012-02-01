@@ -77,7 +77,7 @@ public class ContactsActivity extends ListActivity implements OnItemClickListene
 		List<MyContacts> vec = mainApp.getListContactsID();
 
 		if(vec == null || vec.size() == 0)
-			return new String[]{"Seznam prejemnikov je prazen, dodajte prejemnika!"};
+			return new String[]{getString(R.string.empty_contact_list)};
 
 		String[] str = new String[vec.size()];
 		for(int i = 0; i < vec.size(); i++) {
@@ -92,16 +92,20 @@ public class ContactsActivity extends ListActivity implements OnItemClickListene
 	}
 
 	public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+		final int pos = position;
 		new AlertDialog.Builder(this)
 		.setIcon(android.R.drawable.ic_dialog_alert)
-		.setTitle("Brisasnje kontakta")
-		.setMessage("Ali ste prepriËani, da ûelite odstraniti kontakt?")
+		.setTitle("Brisanje kontakta")
+		.setMessage("Ali ste prepriƒçani, da ≈æelite odstraniti kontakt?")
 		.setPositiveButton("Da", new DialogInterface.OnClickListener() {
 
 			public void onClick(DialogInterface dialog, int which) {
-				long id = mainApp.getListContactsID().get(ContactsActivity.this.getSelectedItemPosition()).getId();
+//				int pos = (ContactsActivity.this).getSelectedItemPosition();
+				long id = mainApp.getListContactsID().get(pos).getId();
 				mainApp.removeContactFromDB(id);
-				mainApp.getListContactsID().remove(ContactsActivity.this.getSelectedItemPosition());
+				mainApp.getListContactsID().remove(pos);
+
+//				mainApp.getListContactsID().remove(ContactsActivity.this.getSelectedItemPosition());
 				ContactsActivity.this.setListAdapter(new ArrayAdapter<String>(ContactsActivity.this, android.R.layout.simple_list_item_1, getList()));  
 			}
 
@@ -164,7 +168,7 @@ public class ContactsActivity extends ListActivity implements OnItemClickListene
 				phones.close();
 
 				if(t.equalsIgnoreCase("")) {
-					Toast.makeText(ContactsActivity.this, "Kontakt, ki ste ga izbrali ne vsebuje kontaktne ötevilke.", Toast.LENGTH_SHORT).show();
+					Toast.makeText(ContactsActivity.this, "Kontakt, ki ste ga izbrali ne vsebuje kontaktne ≈°tevilke.", Toast.LENGTH_SHORT).show();
 				} else {
 					mainApp.getListContactsID().add(new MyContacts(contactId));
 					int size = mainApp.getListContactsID().size();

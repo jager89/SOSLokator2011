@@ -88,7 +88,7 @@ public class PathDataActivity extends Activity {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			textViewMyAdress.setText(getString(R.string.widget_text_nodata));
+			textViewMyAdress.setText(getString(R.string.nodata));
 		}
 
 		Bundle bundle = getIntent().getExtras();
@@ -115,7 +115,7 @@ public class PathDataActivity extends Activity {
 
 			} catch (IOException e) {
 				e.printStackTrace();
-				textViewSosAdress.setText(getString(R.string.widget_text_nodata));
+				textViewSosAdress.setText(getString(R.string.nodata));
 			}
 		}
 		else {

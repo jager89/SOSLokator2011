@@ -50,7 +50,9 @@ public class UpdateWidgetService extends Service {
 
 	private void setRemoteViews(RemoteViews remoteViews, Intent intent) {
 		if(list.isEmpty()) {
-			remoteViews.setTextViewText(R.id.widget_textview_phone_number, "NI PODATKOV...");		
+			remoteViews.setTextViewText(R.id.widget_textview_phone_number, "NI PODATKOV...");
+			remoteViews.setTextViewText(R.id.widget_textview_timestamp,  "");
+			remoteViews.setTextViewText(R.id.widget_textview_dislplay_name,  "OSVEŽI ME");
 		}
 		else {
 			int pos = app.getWidgetCounter();

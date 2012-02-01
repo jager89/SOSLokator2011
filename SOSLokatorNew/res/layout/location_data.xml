@@ -1,54 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical" android:layout_width="match_parent"
-	android:layout_height="match_parent" android:layout_margin="5dip">
-
-		<TextView
-		    android:id="@+id/layout_data_text_view_location_header"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:clickable="true"
-		    android:onClick="onTextViewLocationStatusClick"
-		    android:text="@string/location_header"
-		    android:textAppearance="?android:attr/textAppearanceMedium" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dip"
+    android:orientation="vertical" >
 
-</TextView>
-
-		<TextView
-		    android:id="@+id/layout_data_textview_location_latitude"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_marginLeft="5dip"
-		    android:text="@string/nodata" >
+    <TextView
+        android:id="@+id/layout_data_text_view_location_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onTextViewLocationStatusClick"
+        android:text="@string/location_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
 
-</TextView>
-
-		<TextView
-		    android:id="@+id/layout_data_textview_location_longitude"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_marginLeft="5dip"
-		    android:text="@string/nodata" >
+    <TextView
+        android:id="@+id/layout_data_textview_location_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+    </TextView>
 
-</TextView>
-
-		<TextView
-		    android:id="@+id/layout_data_textview_location_adress_header"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:clickable="true"
-		    android:onClick="onTextViewLocationStatusClick"
-		    android:text="@string/location_adress_header"
-		    android:textAppearance="?android:attr/textAppearanceMedium" >
+    <TextView
+        android:id="@+id/layout_data_textview_location_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+    </TextView>
 
-</TextView>
-
-		<TextView
-		    android:id="@+id/layout_data_textview_location_adress"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_marginLeft="5dip"
-		    android:text="@string/nodata" >
+    <TextView
+        android:id="@+id/layout_data_textview_location_adress_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onTextViewLocationStatusClick"
+        android:text="@string/location_adress_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
 
-</TextView>		
+    <TextView
+        android:id="@+id/layout_data_textview_location_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/nodata" >
+    </TextView>
+
 </LinearLayout>
