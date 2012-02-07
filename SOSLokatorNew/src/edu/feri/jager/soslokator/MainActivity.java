@@ -39,6 +39,7 @@ public class MainActivity extends MapActivity {
 		setContentView(R.layout.main);
 		myApp = (MyApplication) getApplication();
 		myApp.setMainActivity(this);
+		
 
 		if(checkInternetConnection()) {
 			initElements();	

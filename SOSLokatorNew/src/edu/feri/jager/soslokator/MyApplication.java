@@ -181,6 +181,7 @@ public class MyApplication extends Application {
 	}
 	
 	public void refreshCurrLocation() {
+		if(mainActivity != null)
 		mainActivity.refreshCurrLocation();
 	}
 
